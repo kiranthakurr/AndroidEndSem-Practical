@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E1E1"
+
+    tools:context=".MainActivity">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:background="#E4E1E1"
+        android:scrollbars="none"
+        android:id="@+id/hscroll">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="@dimen/_2sdp"
+                android:src="@drawable/horizontal1"
+                android:id="@+id/h1"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/h2"
+                android:id="@+id/h2"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/h4"
+                android:id="@+id/h3"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/h3"
+                android:id="@+id/h4"
+                android:padding="@dimen/_5sdp"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/g7"
+                android:padding="@dimen/_11sdp"
+                android:id="@+id/h5"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="@dimen/_9sdp"
+                android:src="@drawable/h5"
+                android:id="@+id/h6"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/h6"
+                android:padding="@dimen/_11sdp"
+                android:id="@+id/h7"
+
+                />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hscroll"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+            <GridLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:columnCount="2"
+                android:padding="5dp"
+                android:rowCount="2">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="@dimen/_110sdp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#E4E1E1"
+                    android:elevation="20dp"
+                    app:cardCornerRadius="15dp"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/g1" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#E4E1E1"
+                    android:elevation="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="@dimen/_110sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/g2" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#E4E1E1"
+                    android:elevation="20dp"
+                    app:cardCornerRadius="15dp"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="@dimen/_110sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/g33" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#E4E1E1"
+                    android:elevation="20dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="@dimen/_110sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/g4" />
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_4sdp"
+                android:layout_margin="@dimen/_3sdp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:src="@drawable/landscape2"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:padding="@dimen/_4sdp"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:src="@drawable/shoe"
+                        android:layout_margin="@dimen/_3sdp"/>
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:src="@drawable/landscape2"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:padding="@dimen/_4sdp"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:src="@drawable/landscape3" />
+
+
+
+            </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>
